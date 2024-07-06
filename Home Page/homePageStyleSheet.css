@@ -1,0 +1,290 @@
+/* Presenting the page */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /*text-transform: capitalize;*/
+    transition: 0.1s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior:smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+/* header and navigation bar */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: darkgreen;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+/* Logo */
+header .logo img{
+    float: left;
+    width: 90px;
+    height: auto;  
+}
+
+/* Navigation bar */
+header .navbar{
+    height: 40px;
+}
+
+header .navbar a{
+    font-size: 1.5rem;
+    padding: 1.5rem 1.5rem;
+    color: white;
+}
+
+header .navbar a:hover{
+    color: greenyellow;
+}
+
+/* Different window sizes */
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+}
+
+    header{
+        padding: 2rem;
+}
+}
+
+@media (max-width:768px){
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right:0;
+        background: darkgreen;
+        border-top: .1rem solid rgba(0,0,0,.1);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: darkgreen;
+        border: 1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+    .main{
+        background-position: left;
+    }
+}
+
+/* Top part of the home page */
+.main{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('HomePagebackground.webp');
+    background-size: cover;
+    background-position: center;
+    
+
+}
+
+.main .content h3{
+    font-size: 6rem;
+    color: green;
+    background-color: lightgreen;
+    margin-left: 120px;
+
+}
+
+/* Additional content */
+.topics{
+    background-color:seagreen;
+}
+
+/* Additional content-1 */
+.heading1{
+    text-align: left;
+    padding: 120px 20px; 
+    margin-left: -60px;
+    font-size: 5rem;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('CausesofEndangerment.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 111%;
+    height: 300px;
+}
+
+.heading1 a{
+    color: white;
+}
+
+.heading1 a:hover{
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+/* Additional content-2 */
+.heading2{
+    text-align: left;
+    padding: 120px 20px; 
+    margin-left: -60px;
+    font-size: 5rem;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('ImpactonEcosystems.webp');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 111%;
+    height: 300px;
+}
+
+.heading2 a{
+    color: white;
+}
+
+.heading2 a:hover{
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+/* Additional content-3 */
+.heading3{
+    text-align: left;
+    padding: 120px 20px; 
+    margin-left: -60px;
+    font-size: 5rem;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('PublicAwarenessandEducation.webp');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 111%;
+    height: 300px;
+}
+
+.heading3 a{
+    color: white;
+}
+
+.heading3 a:hover{
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+/* Additional content-4 */
+.heading4{
+    text-align: left;
+    padding: 120px 20px; 
+    margin-left: -60px;
+    font-size: 5rem;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('PoliciesandlegislationrelatedtoEndangeredAnimals.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 111%;
+    height: 300px;
+}
+
+.heading4 a{
+    color: white;
+}
+
+.heading4 a:hover{
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+/* Page editor */
+.pageEditor{
+margin-left: 42%;
+margin-bottom: 10%;    
+text-align: center;
+position: relative;
+cursor: pointer;
+width: 200px;
+border-radius: .6rem;
+font-size: 16px;
+letter-spacing: .1rem;
+font-weight: 600;
+margin-top: 2%;
+padding: 12px 24px;
+border: .2rem solid transparent;
+transition: .5s ease;
+background-color: #BFD2D9;
+color: darkgreen;
+}
+
+button:hover{
+background-color: transparent;
+color: #BFD2D9;
+border-color: #BFD2D9;  
+}
+
+#pageeditor{
+    background-color: darkseagreen;
+}
+
+/* Footer */
+.footer{
+    background-color: black;
+}
+
+.footer .footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .footer-container .footer-links h3{
+    color: white;
+    font-size: 20px;
+    padding: 1rem 0;
+    padding-right: 15rem;
+}
+
+.footer .footer-container .footer-links a{
+    display: block;
+    color: white;
+    font-size: 15px;
+    padding: 1rem;
+}
+
+.footer .footer-container .footer-links a:hover{
+    color: greenyellow;
+    text-decoration: underline ;
+}
+
+/* Footer final part */
+.copyrights p{
+    text-align: center;
+    padding: 1.5rem;
+    color: white;
+    margin-top: 300px;
+    padding-top: 2.5rem;
+    margin-left: -170px;
+    font-size: 12px;
+    border-top: 1rem solid rgba(0,0,0,.1);
+}
