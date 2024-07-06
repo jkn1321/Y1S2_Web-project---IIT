@@ -1,0 +1,263 @@
+/* Presenting the page */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.1s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+/* header and navigation bar */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: darkgreen;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+/* Logo */
+header .logo img{
+    float: left;
+    width: 90px;
+    height: auto;
+}
+
+/* Navigation bar */
+header .navbar{
+    height: 40px;
+}
+
+header .navbar a{
+    font-size: 1.5rem;
+    padding: 1.5rem 1.5rem;
+    color: white;
+}
+
+header .navbar a:hover{
+    color: greenyellow;
+}
+
+/* Different window sizes */
+@media (max-width:991px){
+
+    html{
+    font-size: 55%;
+}
+
+header{
+    padding: 2rem;
+}
+}
+
+@media (max-width:768px){
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right:0;
+        background: darkgreen;
+        border-top: .1rem solid rgba(0,0,0,.1);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: darkgreen;
+        border: 1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+}    
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: darkseagreen;
+}
+.topic{
+    background: black;
+    border-radius: 10px;
+    margin: 50px 50px 70px 50px;
+    padding: 50px 0 50px 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 5px 5px 11px rgba(0,0,0,0.8);
+}
+
+.topic h1{
+    font-size: 20px;
+}
+
+.topic h1, .topic p{
+    color: #ffffff;
+    font-size: 15px;
+}
+.content{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+}
+.content .btn {
+    color: hsl(0, 0%, 100%);
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    background-color: rgb(35, 35, 35);
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: all .5s ease;
+}
+.content .btn:hover{
+    letter-spacing: 3px;
+    background-color: rgb(225, 225, 225);
+    color: #000;
+}
+
+          /* creating a common css file for all pages */
+/* ******************************************************************************************************************************************* */
+/* importing font types */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Tangerine&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+/* apply class to main topic of the web site */
+.main_topic{
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 15px 15px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    color: rgb(234, 208, 242);
+}
+
+/* apply class to sub topics of the web site */
+.sub_topic{
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+/* apply class to content of the web site which should have text shadows */
+.content_text{
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* apply class to content of the web site which doesn't need text shadow */
+.content_text2{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* apply to quotes used in website */
+.quote_text{
+    font-family: 'Tangerine', cursive;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* apply to main heading containing web page topic */
+.animation_h1{
+    animation: fade-in 3s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+
+/* apply to main heading content containing web page topic comments or other lines except main topic */
+.animation_h2{
+    animation-name: fade-in;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode:backwards;
+}
+/* creating animations */
+@keyframes fade-in{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+        filter: blur(8px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+        filter: none;
+    }
+}
+
+/* Footer */
+.footer{
+    background-color: black;
+}
+
+.footer .footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .footer-container .footer-links h3{
+    color: white;
+    font-size: 20px;
+    padding: 1rem 0;
+    padding-right: 15rem;
+}
+
+.footer .footer-container .footer-links a{
+    display: block;
+    color: white;
+    font-size: 15px;
+    padding: 1rem;
+}
+
+.footer .footer-container .footer-links a:hover{
+    color: greenyellow;
+    text-decoration: underline ;
+}
+
+/* Footer final part */
+.copyrights p{
+    text-align: center;
+    padding: 1.5rem;
+    color: white;
+    margin-top: 300px;
+    padding-top: 2.5rem;
+    margin-left: -170px;
+    font-size: 12px;
+    border-top: 1rem solid rgba(0,0,0,.1);
+}
+
+/* Different window sizes for body */
+@media(max-wdth:767px){
+    body{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    }
+
+    @media(max-wdth:574px){
+    body{
+        width: 100%;
+    }
+    }
