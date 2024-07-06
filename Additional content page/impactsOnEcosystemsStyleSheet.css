@@ -1,0 +1,357 @@
+/* Presenting the page */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.1s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior:smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+/* header and navigation bar */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: darkgreen;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+/* Logo */
+header .logo img{
+    float: left;
+    width: 90px;
+    height: auto;
+}
+
+/* Navigation bar */
+header .navbar{
+    height: 40px;
+}
+
+header .navbar a{
+    font-size: 1.5rem;
+    padding: 1.5rem 1.5rem;
+    color: white;
+}
+
+header .navbar a:hover{
+    color: greenyellow;
+}
+
+/* Different window sizes */
+@media (max-width:991px){
+
+    html{
+    font-size: 55%;
+}
+
+header{
+    padding: 2rem;
+}
+}
+
+@media (max-width:768px){
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right:0;
+        background: darkgreen;
+        border-top: .1rem solid rgba(0,0,0,.1);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: darkgreen;
+        border: 1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+}    
+
+
+.topics li {
+    display:inline;
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+.withoutLast{
+    border-right: 2px solid black; 
+}
+
+
+  
+
+/******* TABLE ************/
+
+
+.hyperlink .topics {
+    display: inline-flex;
+    justify-content: center;
+}
+.hyperlink .topics li {
+    margin: 0 20px;
+}
+.hyperlink .topics li a {
+    font-size: 20px;
+    color: green;
+}
+
+.hyperlink .topics li a:hover {
+    font-size: 20px;
+    color: greenyellow;
+    text-decoration-color: greenyellow;
+    text-underline-offset: 8px;
+}
+
+/*************** BODY *******/
+
+body {
+    background-color: darkseagreen;
+    
+}
+
+h1 {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 50px;
+    color: darkgreen;
+    
+}
+
+
+h2 {
+    margin-top: 20px;
+    font-size: 30px;
+    color: green;
+}
+.mainPara {
+    text-align: center;
+    width: 75%;
+    position: relative;
+    left: 13%;
+    color: black;
+
+}
+p {
+    font-size: 18px;
+    line-height: 40px;
+    text-align: justify;
+    color: black;
+}
+
+hr{
+    border: 2px solid green;
+}
+
+.Impacts{
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+/****************** BFC *************/
+
+
+.BreakTheFoodChain h2{
+    margin-left: 4%;
+}
+
+.BreakTheFoodChain img {
+    float: left;
+    margin: auto 2% auto 4%;
+    border-radius: 5%;
+}
+
+.BreakTheFoodChain p {
+    width: 90%;
+    text-align: justify;
+    
+}
+
+/***************** BL **************/
+
+.BiodiversityLoss{
+    margin-top: 5%;
+}
+
+.BiodiversityLoss h2{
+    margin-left: 4%;
+}
+
+.BiodiversityLoss img {
+    float: left;
+    margin: auto 2% auto 4%;
+    border-radius: 5%;
+}
+
+.BiodiversityLoss p {
+    width: 90%;
+    text-align: justify;
+}
+
+/************** APP ***********/
+
+.AlteredPlantPopulations {
+    margin-top: 5%;
+}
+
+.AlteredPlantPopulations h2 {
+    margin-left: 4%;
+    
+}
+
+.AlteredPlantPopulations img {
+    float: left;
+    margin: auto 2% auto 4%;
+    border-radius: 5%;
+}
+
+.AlteredPlantPopulations p {
+    width: 90%;
+    text-align: justify;
+}
+
+
+/************** EE ***********/
+
+.EcosystemEngineer {
+    margin-top: 5%;
+}
+
+.EcosystemEngineer h2 {
+    margin-left: 4%;
+}
+
+.EcosystemEngineer img {
+    float: left;
+    margin: auto 2% auto 4%;
+    border-radius: 5%;
+}
+
+.EcosystemEngineer p {
+    width: 90%;
+    text-align: justify;
+}
+
+
+/************** EOS ***********/
+
+.EffectsOnOtherSpecies {
+    margin-top: 5%;
+}
+
+.EffectsOnOtherSpecies h2 {
+    margin-left: 6%;
+}
+
+.EffectsOnOtherSpecies img {
+    float: left;
+    margin: auto 2% auto 4%;
+    border-radius: 5%;
+}
+
+.EffectsOnOtherSpecies p {
+    width: 90%;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+/*styling for page editor button*/
+.pageEditor{
+    margin-left: 42%;
+    margin-bottom: 10%;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    width: 200px;
+    border-radius: .6rem;
+    font-size: 16px;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    margin-top: 2%;
+    padding: 12px 24px;
+    border: .2rem solid transparent;
+    transition: .5s ease;
+    background-color: #BFD2D9;
+    color: darkgreen;
+}
+button:hover{
+    background-color: transparent;
+    color: #BFD2D9;
+    border-color: #BFD2D9;  
+}
+
+/* Footer */
+.footer{
+    background-color: black;
+}
+
+.footer .footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .footer-container .footer-links h3{
+    color: white;
+    font-size: 20px;
+    padding: 1rem 0;
+    padding-right: 15rem;
+}
+
+.footer .footer-container .footer-links a{
+    display: block;
+    color: white;
+    font-size: 15px;
+    padding: 1rem;
+}
+
+.footer .footer-container .footer-links a:hover{
+    color: greenyellow;
+    text-decoration: underline ;
+}
+
+/* Footer final part */
+.copyrights p{
+    text-align: center;
+    padding: 1.5rem;
+    color: white;
+    margin-top: 300px;
+    padding-top: 2.5rem;
+    margin-left: -170px;
+    font-size: 12px;
+    border-top: 1rem solid rgba(0,0,0,.1);
+}
+
+/* Different window sizes for body */
+@media(max-wdth:767px){
+    body{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    }
+
+    @media(max-wdth:574px){
+    body{
+        width: 100%;
+    }
+    }
