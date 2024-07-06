@@ -1,0 +1,370 @@
+/* Presenting the page */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.1s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior:smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+/* header and navigation bar */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: darkgreen;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+/* Logo */
+header .logo img{
+    float: left;
+    width: 90px;
+    height: auto;
+}
+
+/* Navigation bar */
+header .navbar{
+    height: 40px;
+}
+
+header .navbar a{
+    font-size: 1.5rem;
+    padding: 1.5rem 1.5rem;
+    color: white;
+}
+
+header .navbar a:hover{
+    color: greenyellow;
+}
+
+/* Different window sizes */
+@media (max-width:991px){
+
+    html{
+    font-size: 55%;
+}
+
+header{
+    padding: 2rem;
+}
+}
+
+@media (max-width:768px){
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right:0;
+        background: darkgreen;
+        border-top: .1rem solid rgba(0,0,0,.1);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: darkgreen;
+        border: 1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+}    
+
+
+body{
+    background-color: darkseagreen;
+        
+}
+
+/* Form */
+h1{
+    text-align: center;
+}
+
+.comment-form{
+    width:75%;
+    border: 3px solid black;
+    margin: 50px 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-top: 55px;
+    background-color: darkseagreen;
+        
+
+}
+
+/* Question1 */
+.comment-form-Q1{
+    width:90%;
+    border: 2px solid black;
+    margin: 50px 0;
+    padding: 30px 20px;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-top: 35px;
+    background-color: lightgreen;
+
+}
+
+#Q1-heading{
+    font-size: 15px;
+}
+
+/* Answers */
+.number1{
+    
+    padding-right: 27px;
+    padding-bottom: 50px;
+    padding-left: 21px;
+    font-weight: bold;
+}
+
+.number2{
+      
+    padding-right: 25px;
+    padding-bottom: 50px;
+    padding-left: 19.5px;
+    font-weight: bold;
+}
+
+.number3{
+      
+    padding-right: 27px;
+    padding-bottom: 50px;
+    padding-left: 20.5px;
+    font-weight: bold;
+}
+
+.number4{
+      
+    padding-right: 25px;
+    padding-bottom: 50px;
+    padding-left: 19px;
+    font-weight: bold;
+}
+
+.number5{
+      
+    padding-right: 27px;
+    padding-bottom: 50px;
+    padding-left: 19.75px;
+    font-weight: bold;
+}
+
+.buttons{
+    padding-right: 20px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+}
+
+/* Question2 */
+.comment-form-Q2{
+    width:90%;
+    border: 2px solid black;
+    margin: 50px 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-top: -35px;
+    background-color: lightgreen;
+}
+
+/* Answer box */
+textarea{
+    width: 100%;
+    resize: vertical;
+    text-align: left;
+    padding: 1em;
+    font-weight: 500;
+    line-height: 1.4;
+    background: transparent;
+    border: 1px solid black;
+        
+}
+
+#Q2-head{
+    font-size: 15px;
+}
+
+/* Question3 */
+.comment-form-Q3{
+    width:90%;
+    border: 2px solid black;
+    margin: 50px 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-top: 10px;
+    background-color: lightgreen;
+}
+
+#Q3-head{
+    font-size: 15px;
+}
+
+/* Question4 */
+.comment-form-Q4{
+    width:90%;
+    border: 2px solid black;
+    margin: 50px 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-top: 10px;
+    background-color: lightgreen;
+}
+
+#Q4-head{
+    font-size: 15px;
+}
+
+/* Q3 & Q4 popup menu */
+select{
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+/*Clear Button */
+input[type=reset]{
+    width: 10%;
+    font-size: 12px;
+    font-weight: bold;
+    background: darkseagreen;
+    color: black;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+input[type=reset]:hover{
+    background-color:darkgreen;
+}
+
+/* Submit button */
+input[type=submit]{
+    width: 20%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 350px;
+    background: forestgreen;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+input[type=submit]:hover{
+    background-color:greenyellow;
+}
+
+/* Page editor */
+.pageEditor{
+    margin-left: 510px;
+    margin-bottom: 10%;    
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    width: 200px;
+    border-radius: .6rem;
+    font-size: 16px;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    margin-top: 2%;
+    padding: 12px 24px;
+    border: .2rem solid transparent;
+    transition: .5s ease;
+    background-color: #BFD2D9;
+    color: darkgreen;
+}
+
+button:hover{
+    background-color: transparent;
+    color: #BFD2D9;
+    border-color: #BFD2D9;  
+}
+
+/* Footer */
+.footer{
+    background-color: black;
+}
+
+.footer .footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .footer-container .footer-links h3{
+    color: white;
+    font-size: 20px;
+    padding: 1rem 0;
+    padding-right: 15rem;
+}
+
+.footer .footer-container .footer-links a{
+    display: block;
+    color: white;
+    font-size: 15px;
+    padding: 1rem;
+}
+
+.footer .footer-container .footer-links a:hover{
+    color: greenyellow;
+    text-decoration: underline ;
+}
+
+/* Footer final part */
+.copyrights p{
+    text-align: center;
+    padding: 1.5rem;
+    color: white;
+    margin-top: 300px;
+    padding-top: 2.5rem;
+    margin-left: -170px;
+    font-size: 12px;
+    border-top: 1rem solid rgba(0,0,0,.1);
+}
+
+/* Different window sizes for body */
+@media(max-wdth:767px){
+    body{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    }
+
+    @media(max-wdth:574px){
+    body{
+        width: 100%;
+    }
+    }
+
+@media(max-wdth:767px){
+        textarea{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    }
+
+@media(max-wdth:574px){
+        textarea{
+        width: 100%;
+    }
+    }
